@@ -1,0 +1,23 @@
+
+
+1. New c++ Project
+
+2. Executable Hello World C++ Project(Toolchains : Linux GCC)
+
+3. Project -> Properties -> C/C++ General -> Paths and Symbols
+ -> <includes> tab -> GNU C++ -> ADD Header file
+
+4. Project -> Properties -> C/C++ Build -> Settings
+ -> <Tool Settings> tab -> GCC C++ Linker -> Libraries 
+ -> Libraries(-l) add library file Name (ex/ libPocoCrypto.so => PocoCrypto)
+ -> Library search path(-L) add library path (ex/ /usr/local/lib/)
+
+5. Run Configurations -> C/C++ Application -> <Project Name> -> <Environment> tab
+ -> New -> [Name : LD_LIBRARY_PATH] and [Value : <library path> (ex/ /usr/local/lib/)]
+
+6. Run  (Test -> HTTPTimeServer -> localhost:9980)
+
+
+
+-note-
+PocoCrypto;PocoCryptod;PocoData;PocoDataSQLite;PocoDataSQLited;PocoDatad;PocoFoundation;PocoFoundationd;PocoJSON;PocoJSONd;PocoNet;PocoNetSSL;PocoNetSSLd;PocoNetd;PocoUtil;PocoUtild;PocoXML;PocoXMLd;
